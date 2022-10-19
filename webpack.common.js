@@ -21,11 +21,11 @@ module.exports = {
         },
         {
           test: /\.(css)$/, use: [{
-              loader: "style-loader" // creates style nodes from JS strings
+              loader: "style-loader" 
           }, {
-              loader: "css-loader" // translates CSS into CommonJS
+              loader: "css-loader" 
           }]
-        }, //css only files
+        },
         {
           test: /\.(png|svg|jpg|gif|jpeg|webp)$/, use: {
             loader: 'file-loader',
@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        favicon: '4geeks.ico',
+        /* favicon: '', */
         template: 'template.html'
     }),
     new Dotenv({ safe: true, systemvars: true })
